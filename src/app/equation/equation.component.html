@@ -1,0 +1,11 @@
+<form [formGroup]="mathForm">
+  <div class="equation">
+    {{ a }} + {{ b }} = <input formControlName="answer" />
+  </div>
+  <!-- No need for paranthesis because its not a method we are calling its a reference for the property a/b-->
+</form>
+
+<div class="stats">
+  {{ secondsPerSolution | number : "1.1-3" }}
+  <!-- minimum number is at least 1 to the left and up to 3 to the right-->
+</div>
