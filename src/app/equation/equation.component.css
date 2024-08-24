@@ -29,3 +29,7 @@ input:focus {
 .equation {
   text-align: center;
 }
+
+.close {
+  background-color: rgba(60, 235, 60, 0.3);
+}

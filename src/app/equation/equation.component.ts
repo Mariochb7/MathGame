@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { delay, filter, scan } from 'rxjs';
+import { AnswerHighlightDirective } from '../answer-highlight.directive';
 import {
   ReactiveFormsModule,
   FormGroup,
@@ -13,7 +14,7 @@ import { MathValidators } from '../math-validators';
 @Component({
   selector: 'app-equation',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, AnswerHighlightDirective],
   templateUrl: './equation.component.html',
   styleUrl: './equation.component.css',
 })
